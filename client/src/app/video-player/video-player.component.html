@@ -1,0 +1,7 @@
+<div class="video-player-container" #container [class.hide]="!currentVideoId">
+    <ngx-y2-player #videoPlayer [container]="container" [playerOptions]="playerOptions" (ready)="onReady()">
+    </ngx-y2-player>
+</div>
+<div class="logo">
+    <img src="/assets/vidme-logo.svg" *ngIf="!currentVideoId" />
+</div>

@@ -1,0 +1,33 @@
+:host {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.component-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 2px;
+}
+.history-list {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    flex: 1;
+}
+
+.history-record {
+    display: flex;
+    .video-title {
+        flex: 1;
+        .text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            text-align: left;
+        }
+        margin-right: 10px;
+    }
+    padding: 10px;
+    border-bottom: 1px solid #f3f3f3;
+}

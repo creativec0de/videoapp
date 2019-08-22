@@ -1,0 +1,10 @@
+<div class="component-title">History</div>
+<div class="history-list">
+    <div class="history-record" *ngFor="let video of historyList">
+        <button class="video-title" mat-button (click)="playVideo(video)">
+            <span class="text" [innerHTML]="video.title | sanitizeHtml">
+            </span>
+        </button>
+        <button mat-flat-button color="accent" (click)="delete(video)">Delete</button>
+    </div>
+</div>

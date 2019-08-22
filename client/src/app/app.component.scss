@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.app-content {
+    display: flex;
+    flex: 1;
+    app-video-player {
+        flex: 1;
+    }
+
+    app-play-history {
+        width: 340px;
+    }
+}

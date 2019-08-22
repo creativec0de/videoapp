@@ -1,0 +1,8 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink';
+@import '~@angular/material/theming';
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+$custom-typography: mat-typography-config($font-family: '"Quicksand", sans-serif;');
+@include mat-core($custom-typography);
+
+@import './styles/base'

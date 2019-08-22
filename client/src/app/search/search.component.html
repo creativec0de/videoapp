@@ -1,0 +1,20 @@
+<div class="search-input">
+        <mat-form-field [floatLabel]="'never'">
+            <input matInput placeholder="What are you looking for?" aria-label="State" [matAutocomplete]="auto"
+                [formControl]="searchVideosCtrl">
+            <mat-autocomplete #auto="matAutocomplete" [class]="'search-autocomplate'" (optionSelected)="autocompleteOptionSelected($event)">
+                <mat-option *ngIf="isLoading" class="is-loading">Loading...</mat-option>
+                <ng-container *ngIf="!isLoading">
+                    <mat-option *ngFor="let video of videoSearchResults" [value]="video">
+    
+                        <img class="thumbnail" [src]="'https://i.ytimg.com/vi/'+video.videoId+'/default.jpg'">
+                        <span class="title" [innerHTML]="video.title | sanitizeHtml">
+                        </span>
+                        <span class="play-button">
+                            <button mat-flat-button color="accent">Play</button>
+                        </span>
+                    </mat-option>
+                </ng-container>
+            </mat-autocomplete>
+        </mat-form-field>
+    </div>

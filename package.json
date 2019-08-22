@@ -1,0 +1,19 @@
+{
+  "name": "videoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativec0de/videoapp.git"
+  },
+  "author": "Asaf Arzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creativec0de/videoapp/issues"
+  },
+  "homepage": "https://github.com/creativec0de/videoapp#readme"
+}
